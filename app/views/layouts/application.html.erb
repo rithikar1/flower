@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
+
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  	<title><%= content_for?(:title) ? yield(:title) : "Padmavathi Flower Decorators" %></title>
+
+  	<%= stylesheet_link_tag    "application" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+ <body style="background: url(/assets/bgimage.jpg);">
+  
+
+
+
+        <div class="row" style="background-color:#ffffff">
+    <div class="large-4 columns"><br> 
+      <a href="/welcome/index"><img src="/assets/logo1.jpg"></a>
+    </div>
+    <div class="large-8 columns"> 
+      <br><br>
+      <ul class="right button-group">
+      <li><a href="/welcome/index" class="small button">Home</a></li>
+      <li><a href="/welcome/aboutus" class="small button ">About Us</a></li>
+      <li><a href="#" class="small button dropdown" data-dropdown="drop1">Services</a></li>
+          <ul id="drop1" class="f-dropdown" data-dropdown-content>
+               <li><a href="/welcome/services">Marriage Decorations</a></li>
+               <li><a href="/welcome/services">Birthday Party Decorations</a></li>
+               
+          </ul>
+      
+      <!-- <li><a href="/welcome/specifications" class="small button">Specifications</a></li> -->
+      <li><a href="/welcome/gallery" class="small button">Gallery</a></li>
+      <li><a href="#" class="small button dropdown" data-dropdown="drop2">Contact Us</a></li>
+        <ul id="drop2" class="f-dropdown" data-dropdown-content>
+             <li><a href="/welcome/contactus">Hyderabad</a></li>
+             <li><a href="/welcome/contactus">Vijayawada</a></li>
+
+        </ul>
+      <li><a href="/welcome/feedback" class="small button">Feedback</a></li>
+
+      </ul>
+
+     </div>
+     <br><br><br><br><br> 
+     <hr>
+     
+   </div>
+  
+ 
+ 
+ 
+ 
+  
+ 
+   <%= yield %>
+  
+  <footer class="row">
+    <div class="small-12 columns" style="background-color:#ffffff">
+      <hr/>
+        <div class="small-3 columns" align="center">
+          <h5 align="center">Follow Us On </h5>
+          <hr>
+          <p><a href="http://www.facebook.com" target="_blank">Facebook</a></p>
+          <p><a href="http://www.twitter.com" target="_blank">Twitter</a></p>
+          <p><a href="http://www.googleplus.com" target="_blank">Googleplus</a></p>
+        </div>
+        <div class="small-3 columns" align="center">
+          <h5>Our Work</h5><hr>
+          <p>Birthday Party Decorations</p>
+          <p>Marriage Decorations</p>
+          <p>Reception Decorations</p>
+          <p>Any Board Decorations</p>
+        </div>
+        <div class="small-3 columns" align="center">
+            <h5>What We Deal</h5><hr>
+               <p><a href="/welcome/aboutus">About Us</a></p>
+               <p><a href="/welcome/gallery">Gallery</a></p>
+               <p><a href="/welcome/services">Specialist In</a></p>
+               
+            <p></p>
+          </ul>
+        </div>
+       <div class="small-3 columns" align="center">
+        <h5>Contact Us</h5><hr>
+        <p>Hyderabad</p>
+        <p>Vijayawada</p>
+        <br><br><br><br><br><br>
+      </div>
+      
+    </div>
+   
+    
+  </footer>
+    
+
+    <p align="center"><font size="2px">© Copyright Reserved at Padmavathi Flower Decorators</font> </p>
+
+
+
+    
+
+    
+    <%= javascript_include_tag "application" %>
+  </body>
+
+
+
+  <style type="text/css">
+ 
+  .small-3 p{
+    margin-bottom: 0;
+
+  }
+
+  
+  
+
+   .f-dropdown:after{
+    left:75px;
+  } 
+  .f-dropdown:before{
+    left:75px;
+  }
+   
+  
+
+  </style>
+
+</html>
