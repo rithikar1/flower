@@ -19,4 +19,5 @@ class WelcomeController < ApplicationController
 
   def services
   end
+  
 end
