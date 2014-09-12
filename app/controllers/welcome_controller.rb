@@ -19,5 +19,7 @@ class WelcomeController < ApplicationController
 
   def services
   end
-  
+  def reception
+    
+  end
 end

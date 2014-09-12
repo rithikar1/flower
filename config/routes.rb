@@ -6,6 +6,7 @@ Flower::Application.routes.draw do
   get "welcome/gallery"
   get "welcome/feedback"
   get "welcome/services"
+  get  "welcome/reception"
   
 
   # The priority is based upon order of creation:

@@ -1,51 +1,81 @@
-<div class="row" style="background-color:#ffffff">
-<div class="large-12 columns">
+<div class="row" style= "background-color:#ffffff">
 
-<div class="large-3 columns">
-<h4 style="font-family:verdaman" > See Gallery</h4>
-<a href="/welcome/specifications"><u>Wedding Decoration</u></a><br><br>
-<a href="#"><img src="/assets/w1.gif"></a><br><br><br>
-<a href="#"><u>Reception Decoration</u></a><br><br>
-<a href="#"><img src="/assets/r1.gif"></a><br><br><br>
-<a href="#"><u>Birthday Party Decoration</u></a><br><br>
-<a href="#"><img src="/assets/b1.jpg"></a><br><br><br>
-<a href="#"><u>Welcome Bord Decoration</u></a><br><br>
-<a href="#"><img src="/assets/entrance-1.jpg"></a><br><br><br>
+  <ul class="example-orbit" data-orbit="" data-options="animation_speed:600; timer_speed:1500; resume_on_mouseout:1; pause_on_hover:1; bullets:0" class="orbit-slides-container" style="height: 200px;"> 
+    <li> 
+      <img src="/assets/w1.gif" alt="slide 1" class="cimage"/> 
+      <div class="orbit-caption"> Flower Decoration </div> 
+    </li> 
+    <li class="active">
+     <img src="/assets/w2.gif" alt="slide 2" class="cimage"/> 
+     <div class="orbit-caption"> Flower Decoration </div> 
+    </li> 
+    <li>
+     <img src="/assets/w3.gif" alt="slide 3" class="cimage"/> 
+     <div class="orbit-caption"> Flower Decoration </div>
+      </li> 
+    </ul>
+  <br>
+  <div class="gallery">
+  <h5 font-family="Verdana, Geneva, sans-serif" >Our Gallery</h5>
+  <ul >
+  <li class="img"><a href="/assets/w1.gif"><img src="/assets/w1.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w2.gif"><img src="/assets/w2.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w3.gif"><img src="/assets/w3.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w4.gif"><img src="/assets/w4.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w5.gif"><img src="/assets/w5.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w6.gif"><img src="/assets/w6.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w7.gif"><img src="/assets/w7.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w8.gif"><img src="/assets/w8.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w9.gif"><img src="/assets/w9.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w10.gif"><img src="/assets/w10.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/w11.gif"><img src="/assets/w11.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/r1.gif"><img src="/assets/r1.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/r2.gif"><img src="/assets/r2.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/r3.gif"><img src="/assets/r3.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/r4.gif"><img src="/assets/r4.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/r5.gif"><img src="/assets/r5.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/r6.gif"><img src="/assets/r6.gif" width="100px" height="100px"></a></li>
+  <li class="img"><a href="/assets/r7.gif"><img src="/assets/r7.gif" width="100px" height="100px"></a></li>
+  </ul>
+  </div>
+</div>
 </div>
 
-<div class="large-9 columns">
-	<ul class="example-orbit-content" data-orbit>
-  <li data-orbit-slide="headline-1">
-    <div>
-      <h2>Headline 1</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-2">
-    <div>
-      <h2>Headline 2</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-3">
-    <div>
-      <h2>Headline 3</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-</ul>
-	
+<style type="text/css">
 
-</div>
+   
+   .cimage{
+    width:100%;
+    max-height: 400px !important;
+   }
 
-</div>
-</div>
+   div.change a:hover img{
+    border:1px solid #272727;
+   }
 
+  .orbit-bullets { display: none; }
 
+  .row{
+    background-color: #ffffff;
+  }
+  div.gallery{
+    padding: 20px;
+  }
+  .img{
+    display: inline-block;
+  }
+  .img img{
+    border: 4px solid #000000;
+    margin: 2px;
+  }
 
-<style>
-  a:hover img{
-    border:4px solid #232323;
-</style>
+  .img img:hover{
+    border: 4px solid red;
+    margin: 2px;
+  }
+  .img a:hover{
+    
 
+  }
 
+  </style>
