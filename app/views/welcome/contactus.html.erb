@@ -2,9 +2,9 @@
 <div class="row" style="background-color:#ffffff">
 
 <div class="large-12 columns">
-	<div class="large-7 columns">
+	<div class="large-5 columns">
 		<br>
-<h4>Contact Us </h4>
+<h4>Address </h4>
 
 <address>
 
@@ -16,18 +16,47 @@
 <b>Zipcode:</b> 500068<br>
 <b>Country:</b> INDIA<br>
 <b>Email:</b> madhu_sp2004@yahoo.co.in<br>
-<b>Tel:<b> +91.9000555433,
-Mobile: +91.9000555433
+<b>Tel:</b> +91.9000555433,
+<b>Mobile:</b> +91.9000555433
 </address> <br> <br><br>
+</div>
 
 
-
-<div class="large-5 columns">
+<div class="large-7 columns">
 <br>
+<div id="googleMap" style="width:500px;height:380px;"></div>
 	<!--   place the map here -->
-</div>
 <br><br><br>
+</div>
 
 
 <br><br><br>
 </div>
+</div>
+</div>
+
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(17.382159,78.488280),
+  zoom:18,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<style>
+address{
+	font-size: 100%;
+	font-style: normal;
+	font-family: "Times New Roman", Times, serif;
+}
+</style>
