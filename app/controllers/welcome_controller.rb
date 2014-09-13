@@ -22,4 +22,7 @@ class WelcomeController < ApplicationController
   def reception
     
   end
+
+  def new
+  end
 end
