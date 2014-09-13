@@ -10,7 +10,7 @@ development:
   database: cnh_development
   pool: 5
   username: postgres
-  password: maheshwari
+  password: admin
 
 development:
   adapter: postgresql
@@ -18,7 +18,7 @@ development:
   database: myapp_development
   pool: 5
   username: postgres 
-  password: maheshwari
+  password: admin
 
 test:
   adapter: postgresql
@@ -26,4 +26,4 @@ test:
   database: myapp_test
   pool: 5
   username: postgres 
-  password: maheshwari
+  password: admin
