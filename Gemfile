@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+rvm gemset source 'https://rubygems.org'
 
 gem 'rails', '3.2.16'
 
