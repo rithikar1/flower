@@ -7,17 +7,21 @@ development:
   adapter: mysql2
   database: library_development
   username: root
-  password: maheshwari
+  password: 
   host: localhost
 test:
   adapter: mysql2
   database: library_test
   username: root
-  password: maheshwari
+  password: 
   host: localhost
+
+
 production:
-  adapter: mysql2
-  database: library_production
-  username: root
-  password: maheshwari
-  host: localhost
+adapter: postgresql
+encoding: unicode
+host: localhost
+database: cnh_production
+pool: 5
+username:
+password: 
